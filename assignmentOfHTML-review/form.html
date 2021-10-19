@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>htmlForm-assignment</title>
+</head>
+<body>
+    <fieldset style="width: 600px; min-height: 450px; margin: 0 auto; padding: 20px;">
+        <legend>Your basic info:</legend>
+        <form action="#">
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name='fname' placeholder="@first">
+
+            <label for="lname">Last name:</label>
+            <input type="text" id='lname' name='lname' placeholder="@last">
+
+            <br><br>
+
+            <label for="fname">Username:</label><br>
+            <input type="text" id="name" name='name' required placeholder="@username"/>
+            
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name='email' required placeholder="name@gmail.com"/>
+            
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name='password' required placeholder="***" />
+            
+            <br><br><br>
+
+            <label for="age">Age:</label><br>
+
+            <input type="radio" id='under16' name='under_16' value='Under16'>
+            <label for="under16">Under 16</label><br>
+
+            <input type="radio" id='older' name='older_or_16' value='older'>
+            <label for="older">16 or Older</label>
+            
+            <br><br><br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="nepal" selected>Nepal<option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="bhutan">Bhutan</option>
+            </select>
+            
+            <br><br><br>
+
+            <label for="interests">Interests:</label><br>
+            <input type="checkbox" id="singing" name="singing" value="love_singing">
+           <label for="singing">Singing</label><br>
+
+           <input type="checkbox" id="dancing" name="dancing" value="love_dancing">
+           <label for="dancing">Dancing</label><br>
+
+           <input type="checkbox" id="playing" name="playing" value="love_playing">
+           <label for="playing">Playing football</label><br>
+
+           <input type="checkbox" id="watching" name="watching" value="love_watching">
+           <label for="playing">Watching Cinema</label>
+           
+           <br><br><br>
+
+           <label for="skills">Skill:</label>
+           <input list="skills">
+           <datalist id="skills">
+               <option value="Web Development"></option>
+               <option value="Android Development"></option>
+               <option value="Desktop Development"></option>
+               <option value="Game Development"></option>
+           </datalist>
+
+           <br><br><br>
+
+           <label for="birthday">Birthday:</label>
+           <input type="date" id="birthday" name="birthday">
+
+           <br><br><br>
+
+           <label for="myDoc">Select a file:</label>
+          <input type="file" id="myfile" name="myDoc">
+
+          <br><br><br>
+
+           <label for="message">Message:</label><br>
+           <textarea name="message" id="message" cols="50" rows="15" placeholder="Text here..."></textarea>
+           
+           <br><br>
+
+           <input type="submit" value="Submit">
+           <input type="reset" value="reset">
+        </form>
+    </fieldset>
+</body>
+</html>
